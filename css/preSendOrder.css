@@ -1,0 +1,297 @@
+/*Просмотр заказа перед оплатой*/
+.body-order {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .8s ease;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.body-main {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity .8s ease;
+}
+
+/*Cl btn order*/
+.container-body-order {
+    position: relative;
+}
+
+.cl-btn-order {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.right {
+    width: 40px;
+    height: 4px;
+    background-color: #F4511F;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+.right::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #F4511F;
+    transform: rotate(90deg);
+    border-radius: 10px;
+}
+
+
+/*---------------------*/
+
+.title-body-order {
+    margin-top: 30px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;  
+}
+
+.wrapper-body-order {
+    margin-top: 50px;
+}
+
+.left-body-order {
+    max-width: 800px;
+}
+.info-title-item {
+    display: flex;
+    align-items: center;
+}
+
+.info-title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+.value {
+    margin-left: 10px;
+    font-size: 19px;
+    color: #949494;
+    word-wrap: break-word;
+    margin-bottom: 39px;
+    font-weight: 500;
+}
+
+
+.wrapper-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.sendOrder {
+    background-color: #F4511F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 20px;
+}
+.sendOrder:hover {
+    cursor: pointer;
+    background-color: #c93c11;
+    transition: all .3s ease;
+}
+
+
+/*radio payment type*/
+.payment-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.payment-type-title {
+    font-size: 32px;
+    margin-top: 50px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.radio-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.radio-payment-type {
+    display: none;
+}
+
+.custom-radio-type {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #c93c11;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: all .3s ease;
+}
+.custom-radio-type::after {
+    content: "";
+    background-image: url('../img/order/card.svg');
+    display: inline-block;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+.custom-radio-type::before {
+    content: 'Банковская Карта';
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    bottom: 40px;
+    left: 20px;
+}
+.wallet::after {
+    background-image: url('../img/order/wallet.svg');
+    left: 45px;
+    top: 30px;
+}
+.wallet::before {
+    content: 'Кошелёк ЮMoney';
+    left: 25px;
+}
+
+.radio-payment-type:checked + .custom-radio-type {
+    transform: scale(1);
+    background-color: #F4511F;
+    border: 3px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hider {
+    position: fixed;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s ease;
+}
+
+/*--------------Адаптив--------------*/
+
+@media (max-width: 795px) {
+    .container-product {
+        justify-content: space-between;
+    }
+
+    .img-product {
+        transform: scale(.85);
+    }
+
+    .title-product {
+        font-size: 30px;
+    }
+
+    .input_order {
+        width: 250px;
+    }
+
+    #addres_order {
+        width: 250px;
+    }
+
+    .wrapper-aboutUs {
+        justify-content: space-between;
+    }
+    .img-aboutUs {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .left-box-aboutUs {
+        margin-right: 30px;
+    }
+
+    .counter {
+        transform: scale(.9);
+    }
+
+    .order-right {
+        justify-content: left;
+    }
+}

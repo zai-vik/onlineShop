@@ -1,0 +1,440 @@
+<?php 
+    $price = 10;
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VikStore интернет-магазин</title>
+
+    
+
+    <!--Подключение шрифтов-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!--Подключение CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/popUpSupport.css">
+    <link rel="stylesheet" href="css/preSendOrder.css">
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/css/suggestions.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    
+
+    <div class="body-main">
+
+        <!--Header-->
+        <header id="header" class="header">
+            <div class="container">
+                <nav class="nav">
+
+                    <div class="logo">
+
+                        <p><a href="index.html">VikStore</a></p>
+
+                    </div>
+
+                    <div class="menu">
+
+                        <ul class="navigation">
+                            <li><a href="#header">Главная</a></li>
+                            <li><a href="#OurServices">О сервисе</a></li>
+                            <li><a href="#AboutUs">Товар</a></li>
+                            <li><a href="#product">Купить</a></li>
+                        </ul>
+
+                        <button type="button" class="support">Поддержка</button>
+
+                    </div>
+
+                </nav>    
+
+                <div class="main-header">
+
+                    <div class="left-box">
+                        <img src="img/header/main-img.png" alt="main-img">
+                    </div>
+
+                    <div class="right-box">
+
+                        <p class="header-suptitle">#1 на рынке</p>
+                    
+                        <h2 class="header-title">Лучший <br> товар <br> на рынке</h2>
+
+                        <p class="header-subtitle">
+                            Лучший товар, который вы найдёте только у нас, а также вы получаете хорошую возможность
+                            купить этот товар по скидке.
+                        </p>
+
+                        <a href="#">Купить сейчас</a>
+
+                    </div>
+
+                </div>
+
+                <div class="header-border"></div>
+            </div>
+        </header>
+        <!--_____________________________________-->
+
+        <!--Main block-->
+        <main>
+
+            <!--OurServices-->
+            <section id="OurServices" class="OurServices">
+                <div class="container">
+
+                    <h3 class="title-OurServices">
+                        О сервисе
+                    </h3>
+
+                    <div class="cards">
+
+                        <div class="card">
+
+                            <div class="img-wrapper">
+                                <img src="img/OurServices/services24.png" alt="img-card" class="img-card">
+                            </div>
+                            
+
+                            <h4 class="title-card">Работаем 24/7</h4>
+
+                            <p class="subtitle-card">
+                                Наш сервис вы можете посещать круглосуточно.
+                            </p>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="img-wrapper">
+                                <img src="img/OurServices/delivery.png" alt="img-card" class="img-card two">
+                            </div>
+
+                            <h4 class="title-card">Быстрая Доставка</h4>
+
+                            <p class="subtitle-card">
+                                Быстрая доставка, чтобы клиенты всегда могли получить заказ вовремя.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!--_____________________________________-->
+
+            <!--________________AboutUs_____________-->
+            <section id="AboutUs" class="AboutUs">
+                <div class="container">
+
+                    <div class="wrapper-aboutUs">
+
+                        <div class="left-box-aboutUs">
+                            <h3 class="title-aboutUs">О товаре</h3>
+
+                            <p class="subtitle-aboutUs">У нас лучший товар на интернет рынке. Покупайте у нас, и вы точно останетесь довольны.</p>
+                    
+                            <a class="link-aboutUs" href="#">Узнать больше</a>
+
+                        </div>
+
+                        <img src="img/AboutUs/pizza.png" alt="pizza" class="img-aboutUs">
+
+                    </div>
+
+                    
+                </div>
+            </section>
+            <!--_____________________________________-->
+
+            <!--___________Product_________________-->
+            <section id="product" class="product">
+
+                <div class="container ">
+                    <h3 class="title-order">Оформление заказа</h3>
+
+                    <div class="container-product">
+                        
+                        <img src="img/header/main-img.png" alt="product" class="img-product">
+
+                        <div class="info-product">
+
+                            <div class="text-product">
+
+                                <p class="title-product">Имя товара</p>
+
+                                <p class="subtitle-product">Здесь находится описание товара, для того, чтобы зацепить клиента красивым описанием, и он заказал и оплатил товар!  </p>
+
+                            </div>
+
+                            <div class="settings-product">
+                                <p class="title-color">Цвет:</p>
+                                <div class="colors">   
+                                    <input data-color="синий" id="one" name="color" type="radio" class="color one">
+                                    <label for="one" class="label-color label-one"></label>
+
+                                    <input data-color="чёрный" id="two" name="color" type="radio" class="color two">
+                                    <label for="two" class="label-color label-two"></label>
+
+                                    <input data-color="белый" id="three" name="color" type="radio" class="color three">
+                                    <label for="three" class="label-color label-three"></label>   
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <form action="#" class="order">
+
+                        <div class="order-wrapper">
+
+                            <div class="order-left">
+                                <label class="label-order" for="name_order">Имя:</label>
+                                <input id="name_order" class="input_order name_order" type="text" name="name_order">
+        
+                                <label class="label-order" for="surname_order">Фамилия:</label>
+                                <input id="surname_order" class="input_order surname_order" type="text" name="surname">
+        
+                                <label class="label-order" for="email_order">Email:</label>
+                                <input id="email_order" class="input_order email_order" type="email" name="email">
+
+                                <div class="wrap-price">
+                                    <label class="label-order">Сумма:</label>
+                                    <p class="price"><?php echo $price ?></p>
+                                    <p class="label-order rub">₽</p>
+                                    <div data-price="" class="pricer hider"><?php echo $price ?></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="order-right">
+                                <label class="label-order" for="phone_order">Телефон:</label>
+                                <input id="phone_order" class="input_order phone_order _phone" type="tel" name="phone">
+        
+                                <label class="label-order" for="addres_order">Адрес:</label>
+                                <textarea class="input_order addres_order area_order" name="addres" id="addres_order"></textarea>
+                            
+                                <div class="counter">
+                                    <div class="counter-wrapper">
+                                        <button type="button" data-action="minus" class="btn-counter minus"></button>
+                                        <input disabled class="counter-value" data-counter value="1">
+                                        <button type="button" data-action="plus" class="btn-counter plus">+</button>
+                                    </div>
+                                    
+                                    <div class="wrapper-buy-btn">
+                                        <a href="#body_order" class="buy-btn">Купить</a>
+                                    </div>
+                                </div>
+                            </div>  
+
+                        </div>
+
+                    </form>
+                </div> 
+
+            </section>
+            <!--_____________________________________-->
+
+        </main>
+        <!--_____________________________________-->
+    </div>
+    
+    <div id="body_order" class="body-order hider">
+        <div class="container container-body-order">
+
+            <a href="#product"><div class="cl-btn-order">
+                <div class="right"></div>
+                <div class="left"></div>
+            </div></a>
+
+            <h1 class="title-body-order">Проверьте введённые вами данные!</h1>
+            <p class="subtitle-body-order">*Если нашли ошибку вернитесь к заполнению данных.</p>
+
+            <form action="https://yoomoney.ru/quickpay/confirm.xml" id="form-Order">
+                <div class="wrapper-body-order">
+                    <div class="left-body-order">
+                        <div class="info-title-item">
+                            <p class="info-title">Имя:</p>
+                            <div class="value value-name"></div>
+                        </div>
+
+                        <div class="info-title-item">
+                            <p class="info-title">Фамилия: </p>
+                            <div class="value value-surname"></div>
+                        </div>   
+                        
+                        <div class="info-title-item">
+                            <p class="info-title">Email: </p>
+                            <div class="value value-email"></div>
+                        </div>
+                        
+                        <div class="info-title-item">
+                            <p class="info-title">Цвет товара: </p>
+                            <div class="value value-color"></div>
+                        </div>
+                        
+                        <div class="info-title-item">
+                            <p class="info-title">Телефон: </p>
+                            <div class="value value-phone"></div>
+                        </div>
+
+                        <div class="info-title-item">
+                            <p class="info-title">Адрес: </p>
+                            <div class="value value-addres"></div>
+                        </div>
+
+                        <div class="info-title-item">
+                            <p class="info-title">Кол-во товара: </p>
+                            <div class="value value-counter"></div>
+                        </div>
+                        
+                        <div class="info-title-item">
+                            <p class="info-title">Сумма: </p>
+                            <div class="value value-price"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <h5 class="payment-type-title">Способ оплаты</h5>
+
+                <div class="payment-type">
+                    <div class="radio-item">
+                        <input checked id="paymentType_AC" data-paymentType="AC" name="paymentType" value="AC" type="radio" class="radio-payment-type">
+                        <label class="custom-radio-type bank_card" for="paymentType_AC"></label>
+                    </div>
+
+                    <div class="radio-item">
+                        <input id="paymentType_PC" data-paymentType="PC" name="paymentType" value="PC" type="radio" class="radio-payment-type">
+                        <label class="custom-radio-type wallet" for="paymentType_PC"></label>
+                    </div> 
+                    
+                </div>
+
+                <input type="hidden" name="receiver" value="4100117945045509">
+                <input type="hidden" name="quickpay-form" value="shop"/>
+                <input type="hidden" name="targets" value="Оплата товара"/>
+                <input class="price_for_buy" type="hidden" name="sum" data-type="number"/>
+                <input type="hidden" name="short-dest"  value="Оплата товара">
+                <input type="hidden" name="successURL"  value="vikstore.ru">
+
+                <div class="wrapper-btn">
+                    <button id="sendOrder" class="sendOrder" type="submit">Оплатить</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+
+
+    <div class="pop hide">
+
+        <div class="popUpSup">
+
+            <div class="popUpSupport-container">
+        
+        
+                <div class="cl-btn-Support">
+        
+                    <div class="cl-btn-2">
+                        <div>
+                            <div class="leftright"></div>
+                            <div class="rightleft"></div>
+                            <span class="close-btn">закрыть</span>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <h5 class="popUpSupport-title">Поддержка</h5>
+        
+                <div id="popUpError" class="popUpError hide">
+                    <div class="popUpError-clBtn-wrapper">
+                        <div class="popUpError-clBtn"></div>
+                    </div>
+                    
+                    <div class="popUpError-container error">
+                        <h5 class="title-popUp">Заполните все обязательные поля!</h5>
+                    </div>
+                </div>
+
+                <div id="popUpSucces" class="popUpSucces hide">
+                    <div id="popUpSucces-clBtn-wrapper" class="popUpSucces-clBtn-wrapper">
+                        <div class="popUpSucces-clBtn"></div>
+                    </div>
+                    
+                    <div class="popUpSucces-container error">
+                        <h5 class="title-popUp-suc">Сообщение успешно отправлено!</h5>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="popUpSupport-box">
+        
+                    <form action="telegram.php" id="formSupport" method="post" class="form-popUpSupport">
+        
+                        <input id="name"  type="text" class=" _req name inputSupport nameSupport" name="name" placeholder="Имя">
+                                
+                        <input id="email"  name="e-mail" type="text" class=" _req email inputSupport emailSupport" placeholder="E-mail">
+        
+                        <input id="phone"  name="phone" type="tel" class="_phone _req phone inputSupport phoneSupport" placeholder="Номер телефона">
+        
+                        <textarea id="mess"  name="mess" class="_req mess supportArea" placeholder="Напишите, с какими проблемами вы столкнулись?"></textarea>
+                                    
+                        <button id="sendMail" class="btn-submit" type="button">Отправить</button>
+                        
+                    </form> 
+        
+                </div>
+        
+                
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!--ПОпап продукта об ошибке-->
+    
+        <div class="error-order hide" >
+            <div class="container">
+                <div class="error-order-wrapper">
+                    <div class="cl-btn-error-order">
+                        <div class="error-order-right"></div>
+                    </div>
+                    <p class="title-error-order">
+                        Введите имя
+                    </p>
+                </div>
+            </div>
+        </div>
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@21.12.0/dist/js/jquery.suggestions.min.js"></script>
+    <script src="js/addres.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/popUpSupport.js"></script>
+    <script src="js/formMailSupport.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/preSendOrder.js"></script>
+    <script src="js/phoneMask.js"></script>
+    <script>
+        window.replainSettings = { id: 'a066ac7b-0d38-4280-95f7-6d8f68f16da1' };
+        (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+</body>
+</html>
